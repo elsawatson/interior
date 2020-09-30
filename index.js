@@ -30,6 +30,10 @@ app.get("/signup",(req,res) =>{
     return res.send("you are visiting signup route");
     console.log("User is signed up");
 });
+app.get("/accounts",(req,res) =>{
+    return res.send("you are visiting accounts route");
+    console.log("User is logged in  accounts section");
+});
 
 app.listen(port,()=>{
     console.log("server is up and running on port ${port}");
